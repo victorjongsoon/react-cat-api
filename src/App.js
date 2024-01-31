@@ -5,8 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 // Import your own components
 import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import Dog from './components/Dog';
 
 // Define custom styles
 const useStyles = makeStyles((theme) => ({
@@ -36,16 +35,14 @@ function App() {
             <Typography variant="h6" className={classes.title}>
               Cat Adoption
             </Typography>
-            <Button color="inherit" component={Link} to="/react-cat-api">Home</Button>
-            <Button color="inherit" component={Link} to="/about">About</Button>
-            <Button color="inherit" component={Link} to="/contact">Contact</Button>
+            <Button color="inherit" component={Link} to="/react-cat-api">Cat</Button>
+            <Button color="inherit" component={Link} to="/dogs">Dogs</Button>
           </Toolbar>
         </AppBar>
 
         <Routes>
           <Route path="/react-cat-api" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/dogs" element={<Dog />} />
         </Routes>
 
       </div>
