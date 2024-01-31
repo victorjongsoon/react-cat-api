@@ -36,17 +36,18 @@ function App() {
             <Typography variant="h6" className={classes.title}>
               Cat Adoption
             </Typography>
-            <Button color="inherit" component={Link} to="/">Home</Button>
+            <Button color="inherit" component={Link} to="/react-cat-api">Home</Button>
             <Button color="inherit" component={Link} to="/about">About</Button>
             <Button color="inherit" component={Link} to="/contact">Contact</Button>
           </Toolbar>
         </AppBar>
 
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/react-cat-api" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
       </div>
     </Router>
   );
